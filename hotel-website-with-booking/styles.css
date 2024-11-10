@@ -1,0 +1,331 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5rem;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('hotel-hero.jpg');
+  background-color: skyblue;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 24px;
+}
+
+.search-form {
+  margin-top: 20px;
+}
+
+.search-form input {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Rooms Section */
+.rooms-container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px;
+}
+
+.rooms-list {
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.room {
+  background-color: white;
+  width: 30%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.room img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.room-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.room-info h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.room-info p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.room-info a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.room-info a:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* About Us Page */
+.about-us {
+  padding: 40px;
+  text-align: center;
+}
+
+.about-us h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-us h2 {
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+.about-us p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Contact Us Page */
+.contact-us {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-us h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.contact-us form label {
+  font-size: 16px;
+}
+
+.contact-us form input,
+.contact-us form textarea {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.contact-us form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-info {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/* Room Details Page */
+.room-details {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.room-images {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.room-images img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.room-info {
+  width: 45%;
+  text-align: left;
+}
+
+.room-info h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.room-info .price {
+  font-size: 28px;
+  color: #ff6f61;
+  margin-bottom: 20px;
+}
+
+.room-info .description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.room-info h2 {
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.room-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.room-info ul li {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.room-info form {
+  margin-top: 30px;
+}
+
+.room-info form label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.room-info form input {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.room-info form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.room-info form button:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

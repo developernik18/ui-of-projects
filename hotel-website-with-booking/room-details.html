@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Details - Hotel Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Hotel Name</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Room Details Section -->
+    <section class="room-details">
+        <div class="room-images">
+            <img src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Deluxe Room">
+            <img src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Deluxe Room 2">
+        </div>
+        <div class="room-info">
+            <h1>Deluxe Room</h1>
+            <p class="price">From $150 per night</p>
+            <p class="description">Enjoy the comfort of our Deluxe Room, with a king-sized bed, elegant decor, and stunning views of the city skyline. Perfect for couples or solo travelers looking for luxury.</p>
+
+            <h2>Amenities</h2>
+            <ul>
+                <li>King-sized bed</li>
+                <li>Free WiFi</li>
+                <li>Air conditioning</li>
+                <li>Mini bar</li>
+                <li>Room service available</li>
+                <li>In-room safe</li>
+                <li>Flat-screen TV</li>
+            </ul>
+
+            <h2>Room Features</h2>
+            <p>This room offers spacious living, with large windows that bring in natural light. It also includes a seating area, ideal for relaxation after a long day of sightseeing.</p>
+
+            <form action="booking.html" method="POST">
+                <label for="check-in">Check-in Date:</label>
+                <input type="date" id="check-in" name="check-in" required>
+
+                <label for="check-out">Check-out Date:</label>
+                <input type="date" id="check-out" name="check-out" required>
+
+                <label for="adults">Number of Adults:</label>
+                <input type="number" id="adults" name="adults" min="1" required>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Hotel Name | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
