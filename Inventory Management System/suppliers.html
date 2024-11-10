@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppliers - Inventory Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Suppliers Management</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="orders.html">Orders</a>
+            <a href="suppliers.html" class="active">Suppliers</a>
+            <a href="reports.html">Reports</a>
+            <a href="users.html">Users</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>Suppliers List</h2>
+            <button class="add-btn">Add Supplier</button>
+        </section>
+
+        <section class="suppliers-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Supplier Name</th>
+                        <th>Contact</th>
+                        <th>Location</th>
+                        <th>Products Supplied</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Supplier X</td>
+                        <td>contact@x.com</td>
+                        <td>Location A</td>
+                        <td>Electronics</td>
+                        <td>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Supplier Y</td>
+                        <td>contact@y.com</td>
+                        <td>Location B</td>
+                        <td>Furniture</td>
+                        <td>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Supplier Z</td>
+                        <td>contact@z.com</td>
+                        <td>Location C</td>
+                        <td>Clothing</td>
+                        <td>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Inventory Management System</p>
+    </footer>
+</body>
+</html>

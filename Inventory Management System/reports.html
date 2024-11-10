@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - Inventory Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Reports Management</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="orders.html">Orders</a>
+            <a href="suppliers.html">Suppliers</a>
+            <a href="reports.html">Reports</a>
+            <a href="users.html">Users</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Generate Reports</h2>
+        <form>
+            <label for="report-type">Select Report Type:</label>
+            <select id="report-type">
+                <option value="stock">Stock Movement</option>
+                <option value="sales">Sales Analysis</option>
+                <option value="inventory">Inventory Valuation</option>
+            </select>
+
+            <label for="date-range">Date Range:</label>
+            <input type="date" id="start-date" />
+            to
+            <input type="date" id="end-date" />
+
+            <button type="submit">Generate Report</button>
+        </form>
+
+        <h3>Generated Reports</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Report ID</th>
+                    <th>Report Type</th>
+                    <th>Generated On</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Stock Movement</td>
+                    <td>2024-11-01</td>
+                    <td><button>Download</button> <button>View</button></td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Sales Analysis</td>
+                    <td>2024-11-02</td>
+                    <td><button>Download</button> <button>View</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

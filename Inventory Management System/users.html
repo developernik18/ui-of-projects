@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management - Inventory Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>User Management</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="orders.html">Orders</a>
+            <a href="suppliers.html">Suppliers</a>
+            <a href="reports.html">Reports</a>
+            <a href="users.html">Users</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Manage Users</h2>
+        <button>Add User</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Last Login</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>john_doe</td>
+                    <td>john@example.com</td>
+                    <td>Admin</td>
+                    <td>2024-11-01 09:30</td>
+                    <td>
+                      <button class="edit-btn">Edit</button> 
+                      <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>jane_smith</td>
+                    <td>jane@example.com</td>
+                    <td>Manager</td>
+                    <td>2024-11-02 10:45</td>
+                    <td><button class="edit-btn">Edit</button> 
+                      <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
