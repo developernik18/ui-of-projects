@@ -102,3 +102,8 @@ This prototype is designed as a frontend-only demonstration. Future improvements
 This project is licensed under the MIT License. See the `LICENSE` file for more information.
 
 ---
+
+## Alternative Softwares
+
+[Zoho Inventory](https://www.zoho.com/in/inventory/)
+
